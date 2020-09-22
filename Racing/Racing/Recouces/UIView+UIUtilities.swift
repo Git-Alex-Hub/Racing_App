@@ -4,24 +4,14 @@ import UIKit
 extension UIViewController {
     
     func addAlertAndReturn () {
-        let alert = UIAlertController.init(title: LocString(string: "title"), message: LocString(string: "message"), preferredStyle: .alert)
-    alert.addAction(UIAlertAction(title: LocString(string: "button"), style: .cancel, handler: { (_) in
+        let alert = UIAlertController.init(title: locString(string: "title"), message: locString(string: "message"), preferredStyle: .alert)
+    alert.addAction(UIAlertAction(title: locString(string: "button"), style: .cancel, handler: { (_) in
         self.dismiss(animated: false, completion: {})
     }))
     self.present(alert, animated: true, completion: nil)
     }
     
-    func changeFontLabel(label: UILabel, size: CGFloat) -> UILabel {
-        label.font = UIFont(name: "Bangers", size: size)
-        return label
-    }
-    
-    func changeFontButton(button: UIButton, size: CGFloat) -> UIButton {
-        button.titleLabel?.font = UIFont(name: "Bangers", size: size)
-        return button
-    }
-    
-    func LocString (string: String) -> String {
+    func locString (string: String) -> String {
         let locString = NSLocalizedString(string, comment: "")
         return locString
     }

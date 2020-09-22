@@ -26,9 +26,6 @@ class RacingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        changeFontLabel(label: myScoreLabel, size: 22)
-        changeFontLabel(label: mySpeedLabel, size: 22)
-        
         leftBushImage.center = CGPoint(x: 35, y: -200)
         rightBushImage.center = CGPoint(x: 379, y: -100)
         leftStoneImage.center = CGPoint(x: 100, y: -100)
@@ -112,6 +109,8 @@ class RacingViewController: UIViewController {
 //MARK: Timer
         gameOverTimer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true) { (_) in
             if self.leftStoneImage.layer.presentation()?.frame.intersects(self.myCarImage.frame) == true || self.rightStoneImage.layer.presentation()?.frame.intersects(self.myCarImage.frame) == true {
+                crashAudioPlayer?.play()
+                
                 self.saveMyScore()
                 self.addAlertAndReturn()
                 self.gameOverTimer?.invalidate()

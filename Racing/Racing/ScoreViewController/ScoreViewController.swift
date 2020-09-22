@@ -17,9 +17,6 @@ class ScoreViewController: UIViewController {
         
         backButton.setTitle(NSLocalizedString("back_button", comment: ""), for: .normal)
         myScoreLabel.text = NSLocalizedString("my_score", comment: "")
-        
-        changeFontLabel(label: myScoreLabel, size: 35)
-        changeFontButton(button: backButton, size: 20)
 
         scoreTableView.delegate = self
         scoreTableView.dataSource = self

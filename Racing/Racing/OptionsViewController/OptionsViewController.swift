@@ -1,7 +1,5 @@
 import UIKit
 
-//let carLoc = NSLocalizedString("car", comment: "")
-
 class OptionsViewController: UIViewController {
     
     @IBOutlet weak var backButton: UIButton!
@@ -35,49 +33,25 @@ class OptionsViewController: UIViewController {
         carBrandLabel.text = NSLocalizedString("car_label", comment: "")
         neonLightsLabel.text = NSLocalizedString("neon_lights", comment: "")
         speedCarLabel.text = NSLocalizedString("speed_car", comment: "")
-        
-        
-        changeFontButton(button: backButton, size: 20)
-        changeFontButton(button: saveOptionsButton, size: 40)
-        
-        changeFontLabel(label: carBrandLabel, size: 20)
-        changeFontLabel(label: neonLightsLabel, size: 20)
-        changeFontLabel(label: speedCarLabel, size: 20)
-        
-        changeFontLabel(label: carBrandChoiceLabel, size: 20)
-        changeFontLabel(label: neonLightsChoiceLabel, size: 20)
-        changeFontLabel(label: speedCarChoiceLabel, size: 20)
-        
-//        let carBrand = userDefaults.string(forKey: UserOptionsKey.carKey.rawValue)
-//        let carImage = userDefaults.string(forKey: UserOptionsKey.carImageKey.rawValue)
-//        let neonLight = userDefaults.string(forKey: UserOptionsKey.neonLocKey.rawValue)
-//        let speedCar = userDefaults.string(forKey: UserOptionsKey.speedLocKey.rawValue)
-        
-//        if (userDefaults.string(forKey: UserOptionsKey.carKey.rawValue) == nil) || (userDefaults.string(forKey: UserOptionsKey.neonLocKey.rawValue) == nil) || (userDefaults.string(forKey: UserOptionsKey.speedLocKey.rawValue) == nil) || (userDefaults.string(forKey: UserOptionsKey.carImageKey.rawValue) == nil) {
-            carBrandChoiceLabel.text = LocString(string: "nissan")
-            carBrandImage.image = UIImage(named: "imageFirstCar")
-            neonLightsChoiceLabel.text = LocString(string: "orange")
-            speedCarChoiceLabel.text = LocString(string: "low")
-//        } else {
-//            carBrandChoiceLabel.text = carBrand
-//            carBrandImage.image = UIImage(named: carImage!)
-//            neonLightsChoiceLabel.text = neonLight
-//            speedCarChoiceLabel.text = speedCar
-//        }
+    
+        carBrandChoiceLabel.text = locString(string: "nissan")
+        carBrandImage.image = UIImage(named: "imageFirstCar")
+        neonLightsChoiceLabel.text = locString(string: "orange")
+        speedCarChoiceLabel.text = locString(string: "low")
     }
     
     private func defaultOptions() {
         switch carBrandChoiceLabel.text {
-        case LocString(string: "nissan"):
+        case locString(string: "nissan"):
             userDefaults.set(carBrandChoiceLabel.text, forKey: UserOptionsKey.carKey.rawValue)
             userDefaults.set("imageFirstCar", forKey: UserOptionsKey.carImageKey.rawValue)
-        case LocString(string: "mitsubishi"):
+        case locString(string: "mitsubishi"):
             userDefaults.set(carBrandChoiceLabel.text, forKey: UserOptionsKey.carKey.rawValue)
             userDefaults.set("imageSecondCar", forKey: UserOptionsKey.carImageKey.rawValue)
-        case LocString(string: "ferrari"):
+        case locString(string: "ferrari"):
             userDefaults.set(carBrandChoiceLabel.text, forKey: UserOptionsKey.carKey.rawValue)
             userDefaults.set("imageThirdCar", forKey: UserOptionsKey.carImageKey.rawValue)
-        case LocString(string: "volvo"):
+        case locString(string: "volvo"):
             userDefaults.set(carBrandChoiceLabel.text, forKey: UserOptionsKey.carKey.rawValue)
             userDefaults.set("imageFourthCar", forKey: UserOptionsKey.carImageKey.rawValue)
         default:
@@ -86,19 +60,19 @@ class OptionsViewController: UIViewController {
         }
         
         switch neonLightsChoiceLabel.text {
-        case LocString(string: "yellow"):
+        case locString(string: "yellow"):
             userDefaults.set(neonLightsChoiceLabel.text, forKey: UserOptionsKey.neonLocKey.rawValue)
             userDefaults.set("yellow", forKey: UserOptionsKey.neonKey.rawValue)
-        case LocString(string: "purple"):
+        case locString(string: "purple"):
             userDefaults.set(neonLightsChoiceLabel.text, forKey: UserOptionsKey.neonLocKey.rawValue)
             userDefaults.set("purple", forKey: UserOptionsKey.neonKey.rawValue)
-        case LocString(string: "green"):
+        case locString(string: "green"):
             userDefaults.set(neonLightsChoiceLabel.text, forKey: UserOptionsKey.neonLocKey.rawValue)
             userDefaults.set("green", forKey: UserOptionsKey.neonKey.rawValue)
-        case LocString(string: "blue"):
+        case locString(string: "blue"):
             userDefaults.set(neonLightsChoiceLabel.text, forKey: UserOptionsKey.neonLocKey.rawValue)
             userDefaults.set("blue", forKey: UserOptionsKey.neonKey.rawValue)
-        case LocString(string: "red"):
+        case locString(string: "red"):
             userDefaults.set(neonLightsChoiceLabel.text, forKey: UserOptionsKey.neonLocKey.rawValue)
             userDefaults.set("red", forKey: UserOptionsKey.neonKey.rawValue)
         default:
@@ -107,10 +81,10 @@ class OptionsViewController: UIViewController {
         }
         
         switch speedCarChoiceLabel.text {
-        case LocString(string: "low"):
+        case locString(string: "low"):
             userDefaults.set(speedCarChoiceLabel.text, forKey: UserOptionsKey.speedLocKey.rawValue)
             userDefaults.set("low", forKey: UserOptionsKey.speedKey.rawValue)
-        case LocString(string: "average"):
+        case locString(string: "average"):
             userDefaults.set(speedCarChoiceLabel.text, forKey: UserOptionsKey.speedLocKey.rawValue)
             userDefaults.set("average", forKey: UserOptionsKey.speedKey.rawValue)
         default:
@@ -121,97 +95,97 @@ class OptionsViewController: UIViewController {
     
     @IBAction func leftButtonChoiceCarBrandClick(_ sender: Any) {
         switch carBrandChoiceLabel.text {
-        case LocString(string: "toyota"):
-            carBrandChoiceLabel.text = LocString(string: "volvo")
+        case locString(string: "toyota"):
+            carBrandChoiceLabel.text = locString(string: "volvo")
             carBrandImage.image = UIImage(named: "imageFourthCar")
-        case LocString(string: "volvo"):
-            carBrandChoiceLabel.text = LocString(string: "ferrari")
+        case locString(string: "volvo"):
+            carBrandChoiceLabel.text = locString(string: "ferrari")
             carBrandImage.image = UIImage(named: "imageThirdCar")
-        case LocString(string: "ferrari"):
-            carBrandChoiceLabel.text = LocString(string: "mitsubishi")
+        case locString(string: "ferrari"):
+            carBrandChoiceLabel.text = locString(string: "mitsubishi")
             carBrandImage.image = UIImage(named: "imageSecondCar")
-        case LocString(string: "mitsubishi"):
-            carBrandChoiceLabel.text = LocString(string: "nissan")
+        case locString(string: "mitsubishi"):
+            carBrandChoiceLabel.text = locString(string: "nissan")
             carBrandImage.image = UIImage(named: "imageFirstCar")
         default :
-            carBrandChoiceLabel.text = LocString(string: "toyota")
+            carBrandChoiceLabel.text = locString(string: "toyota")
             carBrandImage.image = UIImage(named: "imageFifthCar")
         }
     }
         
     @IBAction func rightButtonChoiceCarBrandClick(_ sender: Any) {
         switch carBrandChoiceLabel.text {
-        case LocString(string: "nissan"):
-            carBrandChoiceLabel.text = LocString(string: "mitsubishi")
+        case locString(string: "nissan"):
+            carBrandChoiceLabel.text = locString(string: "mitsubishi")
             carBrandImage.image = UIImage(named: "imageSecondCar")
-        case LocString(string: "mitsubishi"):
-            carBrandChoiceLabel.text = LocString(string: "ferrari")
+        case locString(string: "mitsubishi"):
+            carBrandChoiceLabel.text = locString(string: "ferrari")
             carBrandImage.image = UIImage(named: "imageThirdCar")
-        case LocString(string: "ferrari"):
-            carBrandChoiceLabel.text = LocString(string: "volvo")
+        case locString(string: "ferrari"):
+            carBrandChoiceLabel.text = locString(string: "volvo")
             carBrandImage.image = UIImage(named: "imageFourthCar")
-        case LocString(string: "volvo"):
-            carBrandChoiceLabel.text = LocString(string: "toyota")
+        case locString(string: "volvo"):
+            carBrandChoiceLabel.text = locString(string: "toyota")
             carBrandImage.image = UIImage(named: "imageFifthCar")
         default:
-            carBrandChoiceLabel.text = LocString(string: "nissan")
+            carBrandChoiceLabel.text = locString(string: "nissan")
             carBrandImage.image = UIImage(named: "imageFirstCar")
         }
     }
     
     @IBAction func leftButtonNeonLightChoiceClick(_ sender: Any) {
         switch neonLightsChoiceLabel.text {
-        case LocString(string: "yellow"):
-            neonLightsChoiceLabel.text = LocString(string: "purple")
-        case LocString(string: "purple"):
-            neonLightsChoiceLabel.text = LocString(string: "green")
-        case LocString(string: "green"):
-            neonLightsChoiceLabel.text = LocString(string: "blue")
-        case LocString(string: "blue"):
-            neonLightsChoiceLabel.text = LocString(string: "red")
-        case LocString(string: "red"):
-            neonLightsChoiceLabel.text = LocString(string: "orange")
+        case locString(string: "yellow"):
+            neonLightsChoiceLabel.text = locString(string: "purple")
+        case locString(string: "purple"):
+            neonLightsChoiceLabel.text = locString(string: "green")
+        case locString(string: "green"):
+            neonLightsChoiceLabel.text = locString(string: "blue")
+        case locString(string: "blue"):
+            neonLightsChoiceLabel.text = locString(string: "red")
+        case locString(string: "red"):
+            neonLightsChoiceLabel.text = locString(string: "orange")
         default:
-            neonLightsChoiceLabel.text = LocString(string: "yellow")
+            neonLightsChoiceLabel.text = locString(string: "yellow")
         }
     }
         
     @IBAction func rightButtonNeonLightChoiceClick(_ sender: Any) {
         switch neonLightsChoiceLabel.text {
-        case LocString(string: "orange"):
-            neonLightsChoiceLabel.text = LocString(string: "red")
-        case LocString(string: "red"):
-            neonLightsChoiceLabel.text = LocString(string: "blue")
-        case LocString(string: "blue"):
-            neonLightsChoiceLabel.text = LocString(string: "green")
-        case LocString(string: "green"):
-            neonLightsChoiceLabel.text = LocString(string: "purple")
-        case LocString(string: "purple"):
-            neonLightsChoiceLabel.text = LocString(string: "yellow")
+        case locString(string: "orange"):
+            neonLightsChoiceLabel.text = locString(string: "red")
+        case locString(string: "red"):
+            neonLightsChoiceLabel.text = locString(string: "blue")
+        case locString(string: "blue"):
+            neonLightsChoiceLabel.text = locString(string: "green")
+        case locString(string: "green"):
+            neonLightsChoiceLabel.text = locString(string: "purple")
+        case locString(string: "purple"):
+            neonLightsChoiceLabel.text = locString(string: "yellow")
         default:
-            neonLightsChoiceLabel.text = LocString(string: "orange")
+            neonLightsChoiceLabel.text = locString(string: "orange")
         }
     }
     
     @IBAction func leftButtonSpeedCarChoiceClick(_ sender: Any) {
         switch speedCarChoiceLabel.text {
-        case LocString(string: "fast"):
-            speedCarChoiceLabel.text = LocString(string: "average")
-        case LocString(string: "average"):
-            speedCarChoiceLabel.text = LocString(string: "low")
+        case locString(string: "fast"):
+            speedCarChoiceLabel.text = locString(string: "average")
+        case locString(string: "average"):
+            speedCarChoiceLabel.text = locString(string: "low")
         default:
-            speedCarChoiceLabel.text = LocString(string: "fast")
+            speedCarChoiceLabel.text = locString(string: "fast")
         }
     }
     
     @IBAction func rightButtonSpeedCarChoiceClick(_ sender: Any) {
         switch speedCarChoiceLabel.text {
-        case LocString(string: "low"):
-            speedCarChoiceLabel.text = LocString(string: "average")
-        case LocString(string: "average"):
-            speedCarChoiceLabel.text = LocString(string: "fast")
+        case locString(string: "low"):
+            speedCarChoiceLabel.text = locString(string: "average")
+        case locString(string: "average"):
+            speedCarChoiceLabel.text = locString(string: "fast")
         default:
-            speedCarChoiceLabel.text = LocString(string: "low")
+            speedCarChoiceLabel.text = locString(string: "low")
         }
     }
     
