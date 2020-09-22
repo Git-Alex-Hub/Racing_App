@@ -112,6 +112,8 @@ class RacingViewController: UIViewController {
 //MARK: Timer
         gameOverTimer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true) { (_) in
             if self.leftStoneImage.layer.presentation()?.frame.intersects(self.myCarImage.frame) == true || self.rightStoneImage.layer.presentation()?.frame.intersects(self.myCarImage.frame) == true {
+                crashAudioPlayer?.play()
+                
                 self.saveMyScore()
                 self.addAlertAndReturn()
                 self.gameOverTimer?.invalidate()

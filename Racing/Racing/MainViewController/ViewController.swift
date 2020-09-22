@@ -1,4 +1,5 @@
 import UIKit
+import AVKit
 
 class ViewController: UIViewController {
     
@@ -12,6 +13,10 @@ class ViewController: UIViewController {
         changeFontButton(button: myScoreClickButton, size: 20)
         changeFontButton(button: myOptionsCarButton, size: 20)
         changeFontButton(button: startRacingButton, size: 40)
+        
+        gameAudioPlayer?.play()
+        gameAudioPlayer?.numberOfLoops = -1
+        gameAudioPlayer?.volume = 0.1
         
     }
     @IBAction func startRacingButtonClick(_ sender: Any) {

@@ -9,9 +9,6 @@ class CustomTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        customDateLabelTableView.font = UIFont(name: "Bangers", size: 20)
-        customDateLabelTableView.textColor = UIColor.white
-        
     }
 
 }

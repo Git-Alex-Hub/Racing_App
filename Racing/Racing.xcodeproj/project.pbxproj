@@ -9,9 +9,13 @@
 /* Begin PBXBuildFile section */
 		225EE51324BF387800569FC2 /* OptionsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225EE51224BF387800569FC2 /* OptionsStoryboard.storyboard */; };
 		225EE51724BF393700569FC2 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225EE51624BF393700569FC2 /* OptionsViewController.swift */; };
+		2270EF79251A6E2F00454149 /* MarckScript-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2270EF78251A6E0D00454149 /* MarckScript-Regular.ttf */; };
 		227DD45224C592A900106275 /* ScoreSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227DD45124C592A900106275 /* ScoreSettings.swift */; };
 		2282257B2517ADC700BB4388 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2282257D2517ADC700BB4388 /* Localizable.strings */; };
 		22AE4EE2251A2FA500C2677E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22AE4EE1251A2FA500C2677E /* GoogleService-Info.plist */; };
+		22AE4F29251A541300C2677E /* AudioSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE4F28251A541300C2677E /* AudioSupport.swift */; };
+		22AE4F2F251A544A00C2677E /* Crash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 22AE4F2E251A544A00C2677E /* Crash.mp3 */; };
+		22AE4F35251A545300C2677E /* Game_Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 22AE4F33251A545300C2677E /* Game_Sound.mp3 */; };
 		22C6CB4A24C070140056F25A /* OptionsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6CB4924C070140056F25A /* OptionsKey.swift */; };
 		22CB047224DB2F2500585374 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CB047024DB2F2500585374 /* CustomTableViewCell.swift */; };
 		22CB047324DB2F2500585374 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22CB047124DB2F2500585374 /* CustomTableViewCell.xib */; };
@@ -27,7 +31,6 @@
 		BF31EF2E2493D55300A11123 /* RacingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF31EF2D2493D55300A11123 /* RacingViewController.swift */; };
 		BFA3FE6C24AE7011001DEF60 /* ScoreStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA3FE6B24AE7011001DEF60 /* ScoreStoryboard.storyboard */; };
 		BFA3FE6E24AE7251001DEF60 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA3FE6D24AE7250001DEF60 /* ScoreViewController.swift */; };
-		BFA3FEB024B752C9001DEF60 /* Bangers-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFA3FEAF24B752C9001DEF60 /* Bangers-Regular.ttf */; };
 		BFA3FEB224B753F5001DEF60 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF31EF092493D46300A11123 /* Info.plist */; };
 		BFA3FEB324B753F6001DEF60 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF31EF092493D46300A11123 /* Info.plist */; };
 		BFB643F924ADC5350024E52B /* UIView+UIUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB643F824ADC5350024E52B /* UIView+UIUtilities.swift */; };
@@ -55,12 +58,16 @@
 		04DF6EEF33D8ECCB123827E2 /* Pods-Racing-RacingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Racing-RacingUITests.release.xcconfig"; path = "Target Support Files/Pods-Racing-RacingUITests/Pods-Racing-RacingUITests.release.xcconfig"; sourceTree = "<group>"; };
 		225EE51224BF387800569FC2 /* OptionsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OptionsStoryboard.storyboard; sourceTree = "<group>"; };
 		225EE51624BF393700569FC2 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
+		2270EF78251A6E0D00454149 /* MarckScript-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarckScript-Regular.ttf"; sourceTree = "<group>"; };
 		227DD45124C592A900106275 /* ScoreSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreSettings.swift; sourceTree = "<group>"; };
 		228225712517A66900BB4388 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		228225722517A66A00BB4388 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		2282257C2517ADC700BB4388 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2282257E2517ADC900BB4388 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		22AE4EE1251A2FA500C2677E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		22AE4F28251A541300C2677E /* AudioSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSupport.swift; sourceTree = "<group>"; };
+		22AE4F2E251A544A00C2677E /* Crash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Crash.mp3; sourceTree = "<group>"; };
+		22AE4F33251A545300C2677E /* Game_Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Game_Sound.mp3; sourceTree = "<group>"; };
 		22C6CB4924C070140056F25A /* OptionsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsKey.swift; sourceTree = "<group>"; };
 		22CB047024DB2F2500585374 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		22CB047124DB2F2500585374 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
@@ -84,7 +91,6 @@
 		BF31EF2D2493D55300A11123 /* RacingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacingViewController.swift; sourceTree = "<group>"; };
 		BFA3FE6B24AE7011001DEF60 /* ScoreStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScoreStoryboard.storyboard; sourceTree = "<group>"; };
 		BFA3FE6D24AE7250001DEF60 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
-		BFA3FEAF24B752C9001DEF60 /* Bangers-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bangers-Regular.ttf"; sourceTree = "<group>"; };
 		BFB643F824ADC5350024E52B /* UIView+UIUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+UIUtilities.swift"; sourceTree = "<group>"; };
 		D032EDFDC3DF8ED9D63B788B /* Pods-Racing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Racing.release.xcconfig"; path = "Target Support Files/Pods-Racing/Pods-Racing.release.xcconfig"; sourceTree = "<group>"; };
 		FBD70FEBF4040B09AA196CDB /* Pods_RacingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RacingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +169,15 @@
 			path = Xib;
 			sourceTree = "<group>";
 		};
+		22AE4F2D251A543300C2677E /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				22AE4F2E251A544A00C2677E /* Crash.mp3 */,
+				22AE4F33251A545300C2677E /* Game_Sound.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
 		8EB2427B563FC8D8089D1028 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +214,7 @@
 		BF31EEFA2493D45C00A11123 /* Racing */ = {
 			isa = PBXGroup;
 			children = (
+				22AE4F2D251A543300C2677E /* Audio */,
 				BF31EEFB2493D45C00A11123 /* AppDelegate.swift */,
 				BF31EEFD2493D45C00A11123 /* SceneDelegate.swift */,
 				2282256D25179D5000BB4388 /* Xib */,
@@ -220,9 +236,10 @@
 			isa = PBXGroup;
 			children = (
 				BFB643F824ADC5350024E52B /* UIView+UIUtilities.swift */,
+				22AE4F28251A541300C2677E /* AudioSupport.swift */,
 				22C6CB4924C070140056F25A /* OptionsKey.swift */,
 				227DD45124C592A900106275 /* ScoreSettings.swift */,
-				BFA3FEAF24B752C9001DEF60 /* Bangers-Regular.ttf */,
+				2270EF78251A6E0D00454149 /* MarckScript-Regular.ttf */,
 			);
 			path = Recouces;
 			sourceTree = "<group>";
@@ -348,10 +365,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2270EF79251A6E2F00454149 /* MarckScript-Regular.ttf in Resources */,
+				22AE4F2F251A544A00C2677E /* Crash.mp3 in Resources */,
 				225EE51324BF387800569FC2 /* OptionsStoryboard.storyboard in Resources */,
+				22AE4F35251A545300C2677E /* Game_Sound.mp3 in Resources */,
 				BF31EF082493D46300A11123 /* LaunchScreen.storyboard in Resources */,
 				BF31EF052493D46300A11123 /* Assets.xcassets in Resources */,
-				BFA3FEB024B752C9001DEF60 /* Bangers-Regular.ttf in Resources */,
 				2282257B2517ADC700BB4388 /* Localizable.strings in Resources */,
 				BFA3FE6C24AE7011001DEF60 /* ScoreStoryboard.storyboard in Resources */,
 				BF31EF2C2493D53E00A11123 /* RacingStoryboard.storyboard in Resources */,
@@ -512,6 +531,7 @@
 				BF31EEFE2493D45C00A11123 /* SceneDelegate.swift in Sources */,
 				22CB047224DB2F2500585374 /* CustomTableViewCell.swift in Sources */,
 				BF31EF2E2493D55300A11123 /* RacingViewController.swift in Sources */,
+				22AE4F29251A541300C2677E /* AudioSupport.swift in Sources */,
 				227DD45224C592A900106275 /* ScoreSettings.swift in Sources */,
 				BFA3FE6E24AE7251001DEF60 /* ScoreViewController.swift in Sources */,
 			);
