@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xI1-cO-C46">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Racing View Controller-->
+        <scene sceneID="IAm-Cv-xs6">
+            <objects>
+                <viewController id="xI1-cO-C46" customClass="RacingViewController" customModule="Racing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WuE-6s-Hcj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imageRoad" translatesAutoresizingMaskIntoConstraints="NO" id="Y9t-m2-MON" userLabel="First Image Road">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imageRoad" translatesAutoresizingMaskIntoConstraints="NO" id="mC5-j4-tNX" userLabel="Second Image Road">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imageStone" translatesAutoresizingMaskIntoConstraints="NO" id="qId-7a-O77">
+                                <rect key="frame" x="260" y="105" width="130" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imageStone" translatesAutoresizingMaskIntoConstraints="NO" id="HnI-ua-Xy2">
+                                <rect key="frame" x="39" y="99" width="130" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imageBush" translatesAutoresizingMaskIntoConstraints="NO" id="wMj-5t-L5U">
+                                <rect key="frame" x="0.0" y="-290" width="70" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imageBush" translatesAutoresizingMaskIntoConstraints="NO" id="3hV-nE-qve">
+                                <rect key="frame" x="344" y="0.0" width="70" height="208"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageFirstCar" translatesAutoresizingMaskIntoConstraints="NO" id="QC4-QE-jyb">
+                                <rect key="frame" x="38" y="614" width="125" height="170"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJs-Fd-314">
+                                <rect key="frame" x="20" y="40" width="185" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXK-wV-haF">
+                                <rect key="frame" x="205" y="40" width="185" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="33G-hn-AdM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MrH-cq-XqE"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="QC4-QE-jyb" secondAttribute="bottom" constant="78" id="ItI-g2-NWe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QC4-QE-jyb" secondAttribute="trailing" constant="231" id="fDI-h0-kQw"/>
+                            <constraint firstItem="QC4-QE-jyb" firstAttribute="leading" secondItem="WuE-6s-Hcj" secondAttribute="leadingMargin" constant="18" id="owO-ZR-Uw0"/>
+                            <constraint firstItem="QC4-QE-jyb" firstAttribute="top" secondItem="WuE-6s-Hcj" secondAttribute="topMargin" constant="570" id="zXL-Vk-PpS"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="9VT-Nw-7tM" appends="YES" id="ZgW-JF-4pA"/>
+                            <outletCollection property="gestureRecognizers" destination="OBv-ls-mTd" appends="YES" id="8AN-0k-8wg"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="endGameImage" destination="33G-hn-AdM" id="8wF-NI-TcS"/>
+                        <outlet property="firstRoadImage" destination="Y9t-m2-MON" id="fdJ-Bb-kyb"/>
+                        <outlet property="leftBushImage" destination="wMj-5t-L5U" id="Fvq-pO-Okl"/>
+                        <outlet property="leftStoneImage" destination="HnI-ua-Xy2" id="a0H-T5-N7l"/>
+                        <outlet property="myCarImage" destination="QC4-QE-jyb" id="SxG-g0-3LL"/>
+                        <outlet property="myScoreLabel" destination="yXK-wV-haF" id="cYH-6v-sw5"/>
+                        <outlet property="mySpeedLabel" destination="mJs-Fd-314" id="iXb-sd-sbR"/>
+                        <outlet property="rightBushImage" destination="3hV-nE-qve" id="dmJ-mo-vw6"/>
+                        <outlet property="rightStoneImage" destination="qId-7a-O77" id="JeV-aT-eee"/>
+                        <outlet property="secondRoadImage" destination="mC5-j4-tNX" id="WFD-Mg-vVx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A8x-0y-qFB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="9VT-Nw-7tM" userLabel="moveLeftSwipe">
+                    <connections>
+                        <action selector="moveLeftSwipe:" destination="xI1-cO-C46" id="ZUo-aK-8bF"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="OBv-ls-mTd" userLabel="moveRightSwipe">
+                    <connections>
+                        <action selector="moveRightSwipe:" destination="xI1-cO-C46" id="HFx-bn-FeS"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="105.79710144927537" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="imageBush" width="297.5" height="234"/>
+        <image name="imageFirstCar" width="167.5" height="332.5"/>
+        <image name="imageRoad" width="145" height="225"/>
+        <image name="imageStone" width="480" height="311.5"/>
+    </resources>
+</document>

@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "Options"; ObjectID = "CmS-vj-yvt"; */
+"CmS-vj-yvt.normalTitle" = "Опции";
+
+/* Class = "UIButton"; normalTitle = "START RACING"; ObjectID = "RDU-Sd-u4G"; */
+"RDU-Sd-u4G.normalTitle" = "НАЧАТЬ ГОНКУ";
+
+/* Class = "UIButton"; normalTitle = "My Score"; ObjectID = "mft-CX-h9c"; */
+"mft-CX-h9c.normalTitle" = "Мой рекорд";

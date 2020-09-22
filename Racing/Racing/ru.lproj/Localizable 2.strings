@@ -1,0 +1,45 @@
+/* 
+  Localizable.strings
+  Racing
+
+  Created by MacOS on 20.09.2020.
+  Copyright © 2020 Lina Gittsovich. All rights reserved.
+*/
+//MARK: OptionsLocalized
+
+"back_button" = "Назад";
+"car_label" = "Модель Машины";
+"neon_lights" = "Неон";
+"speed_car" = "Скорость";
+"save_button" = "Сохранить";
+"car" = "Машина";
+
+//Cars
+"nissan" = "Ниссан";
+"mitsubishi" = "Мистубиси";
+"ferrari" = "Феррари";
+"volvo" =  "Вольво";
+"toyota" = "Тойота";
+
+//Neon
+"blue" = "Синий";
+"green" = "Зеленый";
+"purple" = "Фиолетовый";
+"yellow" = "Желтый";
+"orange" = "Оранжевый";
+"red" = "Красный";
+
+//Speed
+"low" = "Медленно";
+"average" = "Быстро";
+"fast" = "Очень быстро";
+
+//MARK: ScoreLocalized
+"score" = "Рекодр";
+"date" = "Дата";
+"my_score" = "Мой рекорд";
+
+//MARK: AllertLocalized
+"title" = "Вы Проиграли";
+"message" = "Попробуйте Снова";
+"button" = "Закрыть";
