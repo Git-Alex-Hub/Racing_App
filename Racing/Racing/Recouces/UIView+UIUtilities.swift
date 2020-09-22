@@ -16,7 +16,6 @@ extension UIViewController {
         return locString
     }
 }
-
 extension UIView {
     
     func applyShadow (color: UIColor , opacity: Float = 1) {

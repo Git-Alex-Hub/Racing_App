@@ -10,12 +10,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        gameAudioPlayer?.play()
-        gameAudioPlayer?.numberOfLoops = -1
-        gameAudioPlayer?.volume = 0.1
-        
     }
     @IBAction func startRacingButtonClick(_ sender: Any) {
+        
         let storyboard = UIStoryboard(name: "RacingStoryboard", bundle: Bundle.main)
         let destinationViewController = storyboard.instantiateInitialViewController() as! RacingViewController
         destinationViewController.modalPresentationStyle = .fullScreen
@@ -23,7 +20,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func myScoreButton(_ sender: Any) {
-
         let storyboard = UIStoryboard(name: "ScoreStoryboard", bundle: Bundle.main)
         let destinationViewController = storyboard.instantiateInitialViewController() as! ScoreViewController
         destinationViewController.modalPresentationStyle = .fullScreen
