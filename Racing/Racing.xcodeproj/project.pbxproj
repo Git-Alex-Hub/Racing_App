@@ -163,8 +163,8 @@
 		2282256D25179D5000BB4388 /* Xib */ = {
 			isa = PBXGroup;
 			children = (
-				22CB047124DB2F2500585374 /* CustomTableViewCell.xib */,
 				22CB047024DB2F2500585374 /* CustomTableViewCell.swift */,
+				22CB047124DB2F2500585374 /* CustomTableViewCell.xib */,
 			);
 			path = Xib;
 			sourceTree = "<group>";

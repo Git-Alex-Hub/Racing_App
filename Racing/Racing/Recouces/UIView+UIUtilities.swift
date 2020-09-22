@@ -11,16 +11,6 @@ extension UIViewController {
     self.present(alert, animated: true, completion: nil)
     }
     
-    func changeFontLabel(label: UILabel, size: CGFloat) -> UILabel {
-        label.font = UIFont(name: "Marck Script", size: size)
-        return label
-    }
-    
-    func changeFontButton(button: UIButton, size: CGFloat) -> UIButton {
-        button.titleLabel?.font = UIFont(name: "Marck Script", size: size)
-        return button
-    }
-    
     func locString (string: String) -> String {
         let locString = NSLocalizedString(string, comment: "")
         return locString

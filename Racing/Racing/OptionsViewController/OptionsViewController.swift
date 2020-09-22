@@ -33,18 +33,6 @@ class OptionsViewController: UIViewController {
         carBrandLabel.text = NSLocalizedString("car_label", comment: "")
         neonLightsLabel.text = NSLocalizedString("neon_lights", comment: "")
         speedCarLabel.text = NSLocalizedString("speed_car", comment: "")
-        
-        
-        changeFontButton(button: backButton, size: 20)
-        changeFontButton(button: saveOptionsButton, size: 40)
-        
-        changeFontLabel(label: carBrandLabel, size: 20)
-        changeFontLabel(label: neonLightsLabel, size: 20)
-        changeFontLabel(label: speedCarLabel, size: 20)
-        
-        changeFontLabel(label: carBrandChoiceLabel, size: 20)
-        changeFontLabel(label: neonLightsChoiceLabel, size: 20)
-        changeFontLabel(label: speedCarChoiceLabel, size: 20)
     
         carBrandChoiceLabel.text = locString(string: "nissan")
         carBrandImage.image = UIImage(named: "imageFirstCar")
