@@ -14,8 +14,8 @@ class RacingViewController: UIViewController {
     @IBOutlet weak var myScoreLabel: UILabel!
     @IBOutlet weak var mySpeedLabel: UILabel!
     
-    private var leftTap = false
-    private var rightTap = false
+    private var leftSwipeCrash = false
+    private var rightSwipeCrash = false
     private var gameOverTimer: Timer?
     private var myScore = 0
     private var recordCounter = 0
@@ -109,6 +109,7 @@ class RacingViewController: UIViewController {
 //MARK: Timer
         gameOverTimer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true) { (_) in
             if self.leftStoneImage.layer.presentation()?.frame.intersects(self.myCarImage.frame) == true || self.rightStoneImage.layer.presentation()?.frame.intersects(self.myCarImage.frame) == true {
+                
                 crashAudioPlayer?.play()
                 
                 self.saveMyScore()
@@ -153,58 +154,65 @@ class RacingViewController: UIViewController {
     }
 //MARK: SwapRecognizer
     @IBAction func moveLeftSwipe(_ sender: Any) {
-        if leftTap == true {
+        
+        if leftSwipeCrash == true {
             UIView.animate(withDuration: 0.4, delay: 0, options: [.curveLinear], animations: {
                 self.myCarImage.center.x = self.view.frame.minX
                 self.myCarImage.transform = self.myCarImage.transform.rotated(by: -CGFloat.pi / 1.4)
             }, completion: nil)
-                self.addAlertAndReturn()
-                self.saveMyScore()
-                self.gameOverTimer?.invalidate()
+            self.addAlertAndReturn()
+            self.saveMyScore()
+            self.gameOverTimer?.invalidate()
             
-                self.endGameImage.image = UIImage(named: "imageExplosion")
+            crashAudioPlayer?.play()
+            
+            self.endGameImage.image = UIImage(named: "imageExplosion")
         
-                self.firstRoadImage.layer.removeAllAnimations()
-                self.secondRoadImage.layer.removeAllAnimations()
-                self.leftStoneImage.layer.removeAllAnimations()
-                self.rightStoneImage.layer.removeAllAnimations()
-                self.leftBushImage.layer.removeAllAnimations()
-                self.rightBushImage.layer.removeAllAnimations()
+            self.firstRoadImage.layer.removeAllAnimations()
+            self.secondRoadImage.layer.removeAllAnimations()
+            self.leftStoneImage.layer.removeAllAnimations()
+            self.rightStoneImage.layer.removeAllAnimations()
+            self.leftBushImage.layer.removeAllAnimations()
+            self.rightBushImage.layer.removeAllAnimations()
             
         } else if myCarImage.center.x - myCarImage.frame.width / 2 > self.view.frame.minX + 70 {
             UIView.animate(withDuration: 0.3, delay: 0, options: [.curveLinear], animations: {
                 self.myCarImage.center.x = self.view.frame.minX + 95
         }, completion: nil)
-                leftTap = true
-                rightTap = false
+            turnAudioPlayer?.play()
+            leftSwipeCrash = true
+            rightSwipeCrash = false
             }
         }
     
     @IBAction func moveRightSwipe(_ sender: Any) {
-        if rightTap == true {
+        if rightSwipeCrash == true {
             UIView.animate(withDuration: 0.4, delay: 0, options: [.curveLinear], animations: {
-                self.myCarImage.center.x = self.view.frame.maxX
-                self.myCarImage.transform = self.myCarImage.transform.rotated(by: CGFloat.pi / 1.4)
+            self.myCarImage.center.x = self.view.frame.maxX
+            self.myCarImage.transform = self.myCarImage.transform.rotated(by: CGFloat.pi / 1.4)
             }, completion: nil)
-                self.addAlertAndReturn()
-                self.saveMyScore()
-                self.gameOverTimer?.invalidate()
+            self.addAlertAndReturn()
+            self.saveMyScore()
+            self.gameOverTimer?.invalidate()
             
-                self.endGameImage.image = UIImage(named: "imageExplosion")
+            crashAudioPlayer?.play()
             
-                self.firstRoadImage.layer.removeAllAnimations()
-                self.secondRoadImage.layer.removeAllAnimations()
-                self.leftStoneImage.layer.removeAllAnimations()
-                self.rightStoneImage.layer.removeAllAnimations()
-                self.leftBushImage.layer.removeAllAnimations()
-                self.rightBushImage.layer.removeAllAnimations()
+            self.endGameImage.image = UIImage(named: "imageExplosion")
+            
+            self.firstRoadImage.layer.removeAllAnimations()
+            self.secondRoadImage.layer.removeAllAnimations()
+            self.leftStoneImage.layer.removeAllAnimations()
+            self.rightStoneImage.layer.removeAllAnimations()
+            self.leftBushImage.layer.removeAllAnimations()
+            self.rightBushImage.layer.removeAllAnimations()
             
         } else if myCarImage.center.x + myCarImage.frame.width / 2 < self.view.frame.maxX - 70 {
             UIView.animate(withDuration: 0.3, delay: 0, options: [.curveLinear], animations: {
                 self.myCarImage.center.x = self.view.frame.maxX - 95
         }, completion: nil)
-                leftTap = false
-                rightTap = true
+            turnAudioPlayer?.play()
+            leftSwipeCrash = false
+            rightSwipeCrash = true
         }
     }
 }

@@ -29,7 +29,6 @@ class OptionsViewController: UIViewController {
         
         backButton.setTitle(NSLocalizedString("back_button", comment: ""), for: .normal)
         saveOptionsButton.setTitle(NSLocalizedString("save_button", comment: ""), for: .normal)
-        
         carBrandLabel.text = NSLocalizedString("car_label", comment: "")
         neonLightsLabel.text = NSLocalizedString("neon_lights", comment: "")
         speedCarLabel.text = NSLocalizedString("speed_car", comment: "")
