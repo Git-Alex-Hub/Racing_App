@@ -23,8 +23,6 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>MarckScript-Regular.ttf</string>
-		<string>Bangers-Regular.ttf</string>
-		<string>Roboto-Black.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

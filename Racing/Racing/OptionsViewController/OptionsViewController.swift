@@ -21,11 +21,38 @@ class OptionsViewController: UIViewController {
     @IBOutlet weak var speedCarChoiceLabel: UILabel!
     
     @IBOutlet weak var carBrandImage: UIImageView!
+    @IBOutlet weak var garageImage: UIImageView!
     
     private let userDefaults = UserDefaults.standard
     
     override func viewDidLoad() {
     super.viewDidLoad()
+        
+        let viewHeight = view.frame.size.height
+        let viewWidth = view.frame.size.width
+        
+        backButton.frame = CGRect(x: viewWidth * 0.03, y: viewHeight * 0.05, width: viewWidth * 0.266, height: viewHeight * 0.056)
+        saveOptionsButton.frame = CGRect(x: 0, y: viewHeight * 0.725, width: viewWidth, height: viewHeight * 0.056)
+        
+        leftButtonChoiceCarBrand.frame = CGRect(x: viewWidth * 0.048, y: viewHeight * 0.167, width: viewWidth * 0.056, height: viewHeight * 0.056)
+        rightButtonChoiceCarBrand.frame = CGRect(x: viewWidth * 0.833, y: viewHeight * 0.167, width: viewWidth * 0.056, height: viewHeight * 0.056)
+        
+        leftButtonNeonLightChoice.frame = CGRect(x: viewWidth * 0.048, y: viewHeight * 0.5, width: viewWidth * 0.056, height: viewHeight * 0.056)
+        rightButtonNeonLightChoice.frame = CGRect(x: viewWidth * 0.833, y: viewHeight * 0.5, width: viewWidth * 0.056, height: viewHeight * 0.056)
+        
+        leftButtonSpeedCarChoice.frame = CGRect(x: viewWidth * 0.048, y: viewHeight * 0.658, width: viewWidth * 0.056, height: viewHeight * 0.056)
+        rightButtonSpeedCarChoice.frame = CGRect(x: viewWidth * 0.833, y: viewHeight * 0.658, width: viewWidth * 0.056, height: viewHeight * 0.056)
+        
+        carBrandLabel.frame = CGRect(x: viewWidth * 0.048, y: viewHeight * 0.1, width: viewWidth * 0.9, height: viewHeight * 0.044)
+        neonLightsLabel.frame = CGRect(x: viewWidth * 0.048, y: viewHeight * 0.44, width: viewWidth * 0.9, height: viewHeight * 0.044)
+        speedCarLabel.frame = CGRect(x: viewWidth * 0.048, y: viewHeight * 0.6, width: viewWidth * 0.9, height: viewHeight * 0.044)
+        
+        carBrandChoiceLabel.frame = CGRect(x: viewWidth * 0.193, y: viewHeight * 0.167, width: viewWidth * 0.628, height: viewHeight * 0.056)
+        neonLightsChoiceLabel.frame = CGRect(x: viewWidth * 0.193, y: viewHeight * 0.5, width: viewWidth * 0.628, height: viewHeight * 0.056)
+        speedCarChoiceLabel.frame = CGRect(x: viewWidth * 0.193, y: viewHeight * 0.658, width: viewWidth * 0.628, height: viewHeight * 0.056)
+        
+        carBrandImage.frame = CGRect(x: viewWidth * 0.217, y: viewHeight * 0.234, width: viewWidth * 0.58, height: viewHeight * 0.2)
+        garageImage.frame = CGRect(x: 0, y: viewHeight * 0.859, width: viewWidth, height: viewHeight * 0.189)
         
         backButton.setTitle(NSLocalizedString("back_button", comment: ""), for: .normal)
         saveOptionsButton.setTitle(NSLocalizedString("save_button", comment: ""), for: .normal)

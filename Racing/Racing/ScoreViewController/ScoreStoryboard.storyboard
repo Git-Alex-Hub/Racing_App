@@ -27,11 +27,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imageGarage" translatesAutoresizingMaskIntoConstraints="NO" id="cYP-JM-LVf">
-                                        <rect key="frame" x="0.0" y="765" width="414" height="170"/>
+                                        <rect key="frame" x="0.0" y="770" width="414" height="170"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwq-Ul-qTP">
-                                        <rect key="frame" x="20" y="45" width="110" height="40"/>
+                                        <rect key="frame" x="20" y="45" width="110" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="MarckScript-Regular" family="Marck Script" pointSize="30"/>
                                         <state key="normal" title="Back">
@@ -42,14 +42,14 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MY SCORE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZx-IN-gyc">
-                                        <rect key="frame" x="8" y="167" width="398" height="68"/>
+                                        <rect key="frame" x="10" y="130" width="400" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="MarckScript-Regular" family="Marck Script" pointSize="40"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WlI-iP-xxs">
-                                        <rect key="frame" x="0.0" y="240" width="414" height="514"/>
+                                        <rect key="frame" x="0.0" y="200" width="414" height="400"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -64,6 +64,7 @@
                     </view>
                     <connections>
                         <outlet property="backButton" destination="dwq-Ul-qTP" id="uso-bD-zsD"/>
+                        <outlet property="garageImage" destination="cYP-JM-LVf" id="Zj5-4U-BSU"/>
                         <outlet property="myScoreLabel" destination="LZx-IN-gyc" id="OgB-bD-VXp"/>
                         <outlet property="scoreTableView" destination="WlI-iP-xxs" id="rWh-1P-331"/>
                     </connections>

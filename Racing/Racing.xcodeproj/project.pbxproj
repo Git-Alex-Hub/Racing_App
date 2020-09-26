@@ -10,14 +10,12 @@
 		225EE51324BF387800569FC2 /* OptionsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225EE51224BF387800569FC2 /* OptionsStoryboard.storyboard */; };
 		225EE51724BF393700569FC2 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225EE51624BF393700569FC2 /* OptionsViewController.swift */; };
 		2270EF79251A6E2F00454149 /* MarckScript-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2270EF78251A6E0D00454149 /* MarckScript-Regular.ttf */; };
-		2270EF93251A7CBA00454149 /* Racing_Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2270EF92251A7CBA00454149 /* Racing_Sound.mp3 */; };
 		2270EF9B251A800D00454149 /* Turn_Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2270EF9A251A800D00454149 /* Turn_Sound.mp3 */; };
 		227DD45224C592A900106275 /* ScoreSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227DD45124C592A900106275 /* ScoreSettings.swift */; };
 		2282257B2517ADC700BB4388 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2282257D2517ADC700BB4388 /* Localizable.strings */; };
 		22AE4EE2251A2FA500C2677E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22AE4EE1251A2FA500C2677E /* GoogleService-Info.plist */; };
 		22AE4F29251A541300C2677E /* AudioSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE4F28251A541300C2677E /* AudioSupport.swift */; };
-		22AE4F2F251A544A00C2677E /* Crash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 22AE4F2E251A544A00C2677E /* Crash.mp3 */; };
-		22AE4F35251A545300C2677E /* Main_View_Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 22AE4F33251A545300C2677E /* Main_View_Sound.mp3 */; };
+		22AE4F2F251A544A00C2677E /* Crash_Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 22AE4F2E251A544A00C2677E /* Crash_Sound.mp3 */; };
 		22C6CB4A24C070140056F25A /* OptionsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6CB4924C070140056F25A /* OptionsKey.swift */; };
 		22CB047224DB2F2500585374 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CB047024DB2F2500585374 /* CustomTableViewCell.swift */; };
 		22CB047324DB2F2500585374 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22CB047124DB2F2500585374 /* CustomTableViewCell.xib */; };
@@ -61,7 +59,6 @@
 		225EE51224BF387800569FC2 /* OptionsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OptionsStoryboard.storyboard; sourceTree = "<group>"; };
 		225EE51624BF393700569FC2 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		2270EF78251A6E0D00454149 /* MarckScript-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarckScript-Regular.ttf"; sourceTree = "<group>"; };
-		2270EF92251A7CBA00454149 /* Racing_Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Racing_Sound.mp3; sourceTree = "<group>"; };
 		2270EF9A251A800D00454149 /* Turn_Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Turn_Sound.mp3; sourceTree = "<group>"; };
 		227DD45124C592A900106275 /* ScoreSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreSettings.swift; sourceTree = "<group>"; };
 		228225712517A66900BB4388 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
@@ -70,8 +67,7 @@
 		2282257E2517ADC900BB4388 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		22AE4EE1251A2FA500C2677E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		22AE4F28251A541300C2677E /* AudioSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSupport.swift; sourceTree = "<group>"; };
-		22AE4F2E251A544A00C2677E /* Crash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Crash.mp3; sourceTree = "<group>"; };
-		22AE4F33251A545300C2677E /* Main_View_Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Main_View_Sound.mp3; sourceTree = "<group>"; };
+		22AE4F2E251A544A00C2677E /* Crash_Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Crash_Sound.mp3; sourceTree = "<group>"; };
 		22C6CB4924C070140056F25A /* OptionsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsKey.swift; sourceTree = "<group>"; };
 		22CB047024DB2F2500585374 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		22CB047124DB2F2500585374 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
@@ -176,10 +172,8 @@
 		22AE4F2D251A543300C2677E /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				22AE4F2E251A544A00C2677E /* Crash.mp3 */,
+				22AE4F2E251A544A00C2677E /* Crash_Sound.mp3 */,
 				2270EF9A251A800D00454149 /* Turn_Sound.mp3 */,
-				2270EF92251A7CBA00454149 /* Racing_Sound.mp3 */,
-				22AE4F33251A545300C2677E /* Main_View_Sound.mp3 */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -372,10 +366,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2270EF79251A6E2F00454149 /* MarckScript-Regular.ttf in Resources */,
-				22AE4F2F251A544A00C2677E /* Crash.mp3 in Resources */,
+				22AE4F2F251A544A00C2677E /* Crash_Sound.mp3 in Resources */,
 				225EE51324BF387800569FC2 /* OptionsStoryboard.storyboard in Resources */,
-				2270EF93251A7CBA00454149 /* Racing_Sound.mp3 in Resources */,
-				22AE4F35251A545300C2677E /* Main_View_Sound.mp3 in Resources */,
 				BF31EF082493D46300A11123 /* LaunchScreen.storyboard in Resources */,
 				BF31EF052493D46300A11123 /* Assets.xcassets in Resources */,
 				2270EF9B251A800D00454149 /* Turn_Sound.mp3 in Resources */,
