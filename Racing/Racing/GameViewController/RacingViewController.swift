@@ -26,17 +26,24 @@ class RacingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        leftBushImage.center = CGPoint(x: 35, y: -200)
-        rightBushImage.center = CGPoint(x: 379, y: -100)
-        leftStoneImage.center = CGPoint(x: 100, y: -100)
-        rightStoneImage.center = CGPoint(x: 310, y: -100)
+        let viewHeight = view.frame.size.height
+        let viewWidth = view.frame.size.width
         
-        firstRoadImage.frame.origin.y = 0
-        secondRoadImage.frame.origin.y = -firstRoadImage.frame.size.height
+        leftBushImage.frame = CGRect(x: 0, y: -viewHeight * 0.262, width: viewWidth * 0.169, height: viewHeight * 0.262)
+        rightBushImage.frame = CGRect(x: viewWidth * 0.84, y: -viewHeight * 0.262, width: viewWidth * 0.169, height: viewHeight * 0.262)
         
-        myCarImage.frame.size = CGSize(width: 125, height: 170)
+        leftStoneImage.frame = CGRect(x: viewWidth * 0.096, y: -viewHeight * 0.314, width: viewWidth * 0.289, height: viewHeight * 0.094)
+        rightStoneImage.frame = CGRect(x: viewWidth * 0.615, y: -viewHeight * 0.314, width: viewWidth * 0.289, height: viewHeight * 0.094)
+        
+        myCarImage.frame = CGRect(x: viewWidth * 0.096, y: viewHeight * 0.686, width: viewWidth * 0.302, height: viewHeight * 0.189)
         myCarImage.clipsToBounds = false
         myCarImage.layer.shadowOffset = CGSize(width: 0, height: 0)
+        
+        firstRoadImage.frame = CGRect(x: 0, y: 0, width: viewWidth, height: viewHeight)
+        secondRoadImage.frame = CGRect(x: 0, y: -firstRoadImage.frame.size.height, width: viewWidth, height: viewHeight)
+        
+        myScoreLabel.frame = CGRect(x: viewWidth * 0.507, y: viewHeight * 0.045, width: viewWidth * 0.446, height: viewHeight * 0.03)
+        mySpeedLabel.frame = CGRect(x: viewWidth * 0.06, y: viewHeight * 0.045, width: viewWidth * 0.446, height: viewHeight * 0.03)
         
         if UserDefaults.standard.string(forKey: UserOptionsKey.carImageKey.rawValue) == nil {
             myCarImage.image = UIImage(named: "imageFirstCar")
@@ -92,19 +99,19 @@ class RacingViewController: UIViewController {
                   }, completion: nil)
         
         UIView.animate(withDuration: durationSpeed, delay: TimeInterval(Int.random(in: 1..<9)), options: [.curveLinear, .repeat], animations: {
-            self.leftBushImage.center = CGPoint(x: self.leftBushImage.center.x , y: self.leftBushImage.center.y + 1200)
+            self.leftBushImage.center = CGPoint(x: self.leftBushImage.center.x , y: self.leftBushImage.center.y + (self.view.frame.size.height * 1.34))
            }, completion: nil)
         
         UIView.animate(withDuration: durationSpeed, delay: TimeInterval(Int.random(in: 1..<9)), options: [.curveLinear, .repeat], animations: {
-               self.rightBushImage.center = CGPoint(x: self.rightBushImage.center.x , y: self.rightBushImage.center.y + 1200)
+               self.rightBushImage.center = CGPoint(x: self.rightBushImage.center.x , y: self.rightBushImage.center.y + (self.view.frame.size.height * 1.34))
            }, completion: nil)
         
         UIView.animate(withDuration: durationSpeed, delay: 2, options: [.curveLinear, .repeat], animations: {
-            self.leftStoneImage.center = CGPoint(x: self.leftStoneImage.center.x, y: self.leftStoneImage.center.y + 1100)
+            self.leftStoneImage.center = CGPoint(x: self.leftStoneImage.center.x, y: self.leftStoneImage.center.y + (self.view.frame.size.height * 1.34))
         }, completion: nil)
         
         UIView.animate(withDuration: durationSpeed, delay: 3, options: [.curveLinear, .repeat], animations: {
-            self.rightStoneImage.center = CGPoint(x: self.rightStoneImage.center.x, y: self.rightStoneImage.center.y + 1100)
+            self.rightStoneImage.center = CGPoint(x: self.rightStoneImage.center.x, y: self.rightStoneImage.center.y + (self.view.frame.size.height * 1.34))
         }, completion: nil)
 //MARK: Timer
         gameOverTimer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true) { (_) in
